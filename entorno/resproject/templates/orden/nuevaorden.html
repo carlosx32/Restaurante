@@ -1,0 +1,17 @@
+{%extends 'base/base.html'%}
+
+{%block title%} Nuevo pedido :D {%endblock%}
+
+
+
+{%block content%}
+  <center>
+  <div formulario>
+    <form method="post">
+      {%csrf_token%}
+      {{form.as_p}}
+      <button type="submit">guardar</button>
+    </form>
+  </div>
+  </center>
+{%endblock%}
